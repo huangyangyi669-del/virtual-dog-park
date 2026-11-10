@@ -23,7 +23,7 @@ No package manager, framework, backend or external API is needed.
 Only one companion is stored under `virtualNaiwaParkPetV1` in browser localStorage. It contains name, breed (character ID), day and happiness. Stage is calculated from the day. Data is local to the browser and origin, is not a GitHub account feature, and does not sync across devices. Clearing browser data clears progress.
 
 ## Artwork and theme
-The dog theme has been replaced with the user's selected Naiwa meme characters, following the user's report that the instructor requested a different theme. The Naiwa and Naidan JPG images were supplied by the user. The Pink Naiwa PNG is an AI-assisted pink recoloring of the supplied Naiwa image, preserving its pose and meme appearance. Images are stored locally; these JPG/PNG assets replace the SVG illustrations in the original dog example. Character identity and source imagery belong to their respective creators; no claim of original character ownership is made.
+The dog theme has been replaced with the user's selected Naiwa meme characters, following the user's report that the instructor requested a different theme. The displayed illustrations are local SVG vector tracings of the user's selected meme images. Each SVG contains colored paths, with no embedded bitmap or external image URL. Naiwa and Naidan were traced from user-supplied JPGs; Pink Naiwa was traced from an AI-assisted pink recoloring. Colors and small details are simplified. These are reference-derived illustrations, not original character designs. Character identity and source imagery belong to their respective creators; no claim of original character ownership is made.
 
 ## Manual browser checklist
 - [ ] All three character images and descriptions appear.
