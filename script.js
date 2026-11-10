@@ -1,7 +1,7 @@
 const characters = {
-  naiwa: { name: '奶蛙', image: 'assets/naiwa.png' },
-  naidan: { name: '奶蛋', image: 'assets/naidan.png' },
-  pink: { name: '粉色奶蛙', image: 'assets/pink.png' }
+  naiwa: { name: '奶蛙', image: 'assets/naiwa-meme.jpg' },
+  naidan: { name: '奶蛋', image: 'assets/naidan-meme.jpg' },
+  pink: { name: '粉色奶蛙', image: 'assets/pink-meme.png' }
 };
 const app = document.getElementById('pet-app');
 const STORAGE_KEY = 'virtualNaiwaParkPetV1';
@@ -21,7 +21,7 @@ function savePet() {
 }
 function render() {
   if (!pet) {
-    app.innerHTML = `<div class="adopt-layout"><div class="adopt-art"><img id="preview" src="assets/naiwa.png" alt="奶蛙形象预览"></div><form id="adopt-form" novalidate><h3>把快乐带回家。</h3><p class="small">选一位奶家人，给它一个专属名字。</p><div class="form-field"><label for="breed">选择小伙伴</label><select id="breed"><option value="naiwa">奶蛙</option><option value="naidan">奶蛋</option><option value="pink">粉色奶蛙</option></select></div><div class="form-field"><label for="pet-name">它叫什么？（最多 20 个字符）</label><input id="pet-name" maxlength="20" placeholder="例如：笑笑" autocomplete="off" aria-describedby="name-error"></div><p id="name-error" class="error" role="alert"></p><button type="submit">带它回家 ↗</button></form></div>`;
+    app.innerHTML = `<div class="adopt-layout"><div class="adopt-art"><img id="preview" src="assets/naiwa-meme.jpg" alt="奶蛙形象预览"></div><form id="adopt-form" novalidate><h3>把快乐带回家。</h3><p class="small">选一位奶家人，给它一个专属名字。</p><div class="form-field"><label for="breed">选择小伙伴</label><select id="breed"><option value="naiwa">奶蛙</option><option value="naidan">奶蛋</option><option value="pink">粉色奶蛙</option></select></div><div class="form-field"><label for="pet-name">它叫什么？（最多 20 个字符）</label><input id="pet-name" maxlength="20" placeholder="例如：笑笑" autocomplete="off" aria-describedby="name-error"></div><p id="name-error" class="error" role="alert"></p><button type="submit">带它回家 ↗</button></form></div>`;
     const breed = document.getElementById('breed');
     breed.addEventListener('change', () => {
       const preview = document.getElementById('preview');
